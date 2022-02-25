@@ -21,7 +21,7 @@ public class WelcomeScreen implements LockedMeScreen{
         options.add("3. Exit");
 	}
 
-	public void showWelcomeMessge() {
+	public void showWelcomeMessage() {
 		System.out.println(welcomeText);
         System.out.println(developerText);
         System.out.println("\n");
