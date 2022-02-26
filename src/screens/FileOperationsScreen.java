@@ -92,7 +92,7 @@ public class FileOperationsScreen implements LockedMeScreen{
 		return option;		
 	}
 	
-	public void deleteFile () {
+	public void deleteFile() {
 		
 		System.out.println("Enter Filename with extension you want to Delete");
 		String fileName = this.getFileNameFromUser();
@@ -112,7 +112,7 @@ public class FileOperationsScreen implements LockedMeScreen{
 	    }		
 	}
 	
-	public void addFile () {
+	public void addFile() {
 		
 		System.out.println("Please Enter the Filename with extension you want to Add:");
 		String fileName = this.getFileNameFromUser();
@@ -136,7 +136,7 @@ public class FileOperationsScreen implements LockedMeScreen{
 	public void searchFile() {
 		
 		Boolean found = false;
-		System.out.println("Enter Filename without extension you want to Search");
+		System.out.println("Enter Filename with extension you want to Search");
 		String fileName = this.getFileNameFromUser();
 		System.out.println("You are searching for a file : " + fileName);
 		System.out.println();
@@ -149,10 +149,10 @@ public class FileOperationsScreen implements LockedMeScreen{
 			}								
 		}		
 		if (found == false) {
-			System.out.println("File found");
+			System.out.println("File not found");
 		}
 		else {
-			System.out.println("File not found");
+			System.out.println("File found");
 		}
 	}
 	
